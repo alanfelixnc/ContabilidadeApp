@@ -23,4 +23,9 @@ $$(document).on('deviceready', function() {
 
 // Option 1. Using page callback for page (for "about" page in this case) (recommended way):
 myApp.onPageInit('add-desp', function (page) {
+	
+	var vencBox = document.getElementById('desp-vencimento-area');
+	vencBox = vencBox.getElementsByTagName('input')[0];
+	vencBox.onchange = showVencimento;
+	
 });

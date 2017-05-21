@@ -94,3 +94,12 @@
 	left: 20%;
 	text-align: center;
 }
+
+.hide {
+	height: 0px;
+}
+
+.desp-diasvencimento {
+	overflow: hidden;
+	transition: all ease-out 0.4s;
+}
