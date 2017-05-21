@@ -1,0 +1,96 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+
+/* Tela Principal */
+
+.statusbar-overlay {
+    background: #000000;
+}
+
+.despesa-table .card-content {
+	height: 100px;
+	overflow-y: scroll;
+}
+
+.despesa-table table {
+	display: flex;
+	align-content: stretch;
+	flex-direction: column;
+}
+
+.despesa-table table thead .label-cell {
+	width: 80px;
+	text-align: left;
+}
+
+.despesa-table table tbody .label-cell {
+	width: 80px;
+	text-align: left;
+	overflow: hidden;
+}
+
+.despesa-table table tr {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 5px;
+}
+
+.data-table-actions {
+	display: flex;
+}
+
+.content-block {
+	padding: 1px;
+	margin-top: 0;
+}
+
+.saldo-card {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.saldo-card .card div {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	max-height: 40px;
+}
+
+.vencimentos-card {
+	margin-top: 0;
+}
+
+.toolbar-inner {
+	width: 100%;
+}
+
+.toolbar-inner p i {
+	float: right;
+	margin-left: 1px;
+	width: 25px;
+	font-size: 17px;
+}
+
+.toolbar p {
+	font-size: 13px;
+	color: gray;
+}
+
+/* Adicionar Despesa */
+
+.add-new-desp {
+	position: absolute;
+	width: 60%;
+	left: 20%;
+	text-align: center;
+}
